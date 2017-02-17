@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">UnibrandApp</string>
+    <string name="unibrand_title">Unibrand Division</string>
+
+    <string-array name="activity_main_list">
+        <item>Bioequivalence</item>
+        <item>Atorvast</item>
+        <item>Glicla</item>
+        <item>Felodipin</item>
+        <item>Azithro</item>
+        <item>Levofloxin</item>
+        <item>Levocet</item>
+        <item>Corporate Video</item>
+    </string-array>
+
+
+    <string name="conclusions">
+        Conclusions\n
+        \t\t\t\tThe study was performed according to the study protocol.\n
+        \t\t\t\tThe test product is bioequivalent to the reference product in terms of rate and extent of absorption.</string>
+
+    <string name="equivalenceAssurance">Therapeutic equivalence can be assured when the product is both pharmaceutically equivalent/alternative and bioequivalent</string>
+    <string name="assuranceFooter">WHO Technical Support Series, No. 937 - 2006</string>
+
+    <string name="equivalenceCriteria">
+        FDA (US-Food and Drug Administration) classifies as therapeutically equivalent those products that meet the following criteria:\n
+        \t\t\t\t1. they are approved as the safe and effective;\n
+        \t\t\t\t2. they are pharmaceutical equivalents in that they\n
+        \t\t\t\t\t\t\t\ta. contain identical amounts of the same active drug ingredient in the same dosage form and route of administration, and\n
+        \t\t\t\t\t\t\t\tb. meet compendial or other applicable standards of strength, quality, purity, and identity;\n
+        \t\t\t\t3. they are bioequivalent standard;\n
+        \t\t\t\t4. they are adequately labeled,\n
+        \t\t\t\t5. they are manufactured in compliance with Current Good Manufacturing regulations</string>
+    <string name="criteriaFooter">US Food and Drug Administration - Center on Drug Research Evaluation and Research</string>
+
+    <string name="atorvastTitle">Atorvastatin Calcium</string>
+    <string name="atorvastSubtitle">
+        Atorvast - Natrapharm\n20mg 40mg 80mg\nAnti-Hyperlipidemia</string>
+    <string name="atorvastUpperRight">
+        Bioequivalent to the innovator brand\nApproved as THERAPEUTICAL EQUIVALENT to innovator brand by the US-Food Drug Administration\nECONOMICAL Atorvastatin brand</string>
+
+
+    <string name="azithroTitle">Azithromycin Monohydrate</string>
+    <string name="azithroSubtitle">
+        Azithro - Natrapharm\n5mg Tablet\nAnti-Infective</string>
+
+    <string name="bioTitle">Bioequivalence</string>
+
+    <string name="feloTitle">Felodipine</string>
+    <string name="feloSubtitle">
+        Felodipin - Natrapharm\n5mg Tablet\nAnti-Hypertensive</string>
+
+    <string name="gliclaTitle">Gliclazide</string>
+    <string name="gliclaSubtitle">
+        Glicla - Natrapharm\n30mg modified release Tablet\nAnti-Diabetic Agent</string>
+
+    <string name="levocetTitle">Levocetirizine diHCl</string>
+    <string name="levocetSubtitle">
+        Levocet - Natrapharm\n5mg film-coated Tablet\nAnti-Histamine</string>
+
+    <string name="levofloTitle">Levofloxacin</string>
+    <string name="levofloSubtitle">
+        Levofloxin - Natrapharm\n500mg film-coated Tablet\nAnti-Infective</string>
+
+</resources>
