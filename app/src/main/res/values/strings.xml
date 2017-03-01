@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">UnibrandApp</string>
+    <string name="app_name">Unibrand</string>
     <string name="unibrand_title">Unibrand Division</string>
 
     <string-array name="activity_main_list">
