@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    tools:context="unibrand.unibrand.unibrandapp.UnibrandVideoActivity">
+    tools:context="app.rocketship.unibrand.UnibrandVideoActivity">
 
     <VideoView
         android:layout_width="wrap_content"

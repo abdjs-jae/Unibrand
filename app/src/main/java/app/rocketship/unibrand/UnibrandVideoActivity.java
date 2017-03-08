@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.VideoView;
 
 import app.rocketship.natrapharmutil.ActivityHandler;
+import app.rocketship.natrapharmutil.LandingActivity;
 
 
 public class UnibrandVideoActivity extends AppCompatActivity {

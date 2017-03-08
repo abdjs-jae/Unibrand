@@ -53,7 +53,15 @@
         <activity
             android:name=".Levocet"
             android:screenOrientation="sensorLandscape" />
-        <activity android:name=".RegisterActivity"></activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="app.rocketship.natrapharmutil.LandingActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="app.rocketship.natrapharmutil.ProfileActivity"
+            android:screenOrientation="sensorLandscape" />
     </application>
 
 </manifest>

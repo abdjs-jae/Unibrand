@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="unibrand.unibrand.unibrandapp.RegisterActivity"
+    tools:context="app.rocketship.unibrand.RegisterActivity"
     android:orientation="vertical">
 
     <TextView

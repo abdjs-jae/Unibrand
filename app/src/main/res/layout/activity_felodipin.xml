@@ -8,7 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@drawable/felodipine"
-    tools:context="unibrand.unibrand.unibrandapp.Felodipin">
+    tools:context="app.rocketship.unibrand.Felodipin">
 
 
     <!--<TextView-->

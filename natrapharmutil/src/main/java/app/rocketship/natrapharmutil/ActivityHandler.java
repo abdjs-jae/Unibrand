@@ -13,6 +13,8 @@ import android.util.Log;
 
 public class ActivityHandler {
 
+    private static Class<?> menuClass;
+
     private static void changeActivity(Context changeFrom, Class<?> changeTo){
         Intent i = new Intent(changeFrom, changeTo);
         changeFrom.startActivity(i);
@@ -20,6 +22,14 @@ public class ActivityHandler {
         ((Activity) changeFrom).finish();
         ((Activity) changeFrom).overridePendingTransition(0, R.anim.screen_splash_fade_out);
 
+    }
+
+    public static void goToLanding(Context currentContext){
+        Intent i = new Intent(currentContext, LandingActivity.class);
+        currentContext.startActivity(i);
+
+        ((Activity) currentContext).finish();
+        ((Activity) currentContext).overridePendingTransition(0, R.anim.screen_splash_fade_out);
     }
 
     public static void goHome(Context context){
@@ -36,11 +46,23 @@ public class ActivityHandler {
         context.startActivity(((Activity) context).getIntent());
     }
 
-    public static void afterSplashActivity(final Context splashActivity, final Class<?> registerClass, final Class<?> menuClass){
+    public static Class<?> getMenuClass(){
+        return menuClass;
+    }
+
+    public static void setMenuClass(Class<?> landingClass){
+        menuClass = landingClass;
+    }
+
+    public static void afterSplashActivity(final Context splashActivity, final Class<?> registerClass, final Class<?> localMenuClass){
+
         DataHandler.setCurrentContext(splashActivity);
 
-        if(DataHandler.hasUserData())
-            changeActivity(splashActivity, menuClass);
+        if(DataHandler.hasUserData()) {
+            Log.d("Test", "Has User Data");
+            setMenuClass(localMenuClass);
+            changeActivity(splashActivity, LandingActivity.class);
+        }
         else
             DataHandler.isDeviceRegistered(
                     new DataHandler.VolleyCallback() {
@@ -48,7 +70,8 @@ public class ActivityHandler {
                         public void doAction(String result) {
                             Log.d("Test", "device exists: " + result);
                             DataHandler.setUserData(result);
-                            changeActivity(splashActivity, menuClass);
+                            setMenuClass(localMenuClass);
+                            changeActivity(splashActivity, LandingActivity.class);
                         }
                     },
                     new DataHandler.VolleyCallback() {

@@ -26,6 +26,7 @@ import org.apache.commons.io.IOUtils;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -88,6 +89,21 @@ public class DataHandler {
 
 
         return data.getString(UserFields.DEVICE_FINGERPRINT.getKey(), null) != null;
+    }
+
+    public static ArrayList<String> getUserData(){
+
+        ArrayList<String> listUser = new ArrayList<>();
+
+        SharedPreferences data = currentContext.getSharedPreferences(PREFERENCE_FILE_KEY, Context.MODE_PRIVATE);
+
+        // Add all user info
+        listUser.add(data.getString(UserFields.NAME.getKey(), null));
+        listUser.add(data.getString(UserFields.DEPARTMENT.getKey(), null));
+        listUser.add(data.getString(UserFields.EMAIL.getKey(), null));
+        listUser.add(data.getString(UserFields.CONTACT.getKey(), null));
+
+        return listUser;
     }
 
     public static void setUserData(Map<String, String> params){
