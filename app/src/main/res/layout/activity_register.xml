@@ -16,14 +16,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textView2"
-        android:textSize="40sp"
+        android:textSize="50sp"
         android:textStyle="normal|bold" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/errorMessage"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="30dp" />
 
     <TableLayout
         android:layout_width="match_parent"
@@ -40,7 +40,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView3"
-                android:textSize="20sp"
+                android:textSize="30sp"
                 android:layout_weight="0.5"
                 android:textAlignment="viewStart" />
 
@@ -63,7 +63,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView4"
-                android:textSize="20sp"
+                android:textSize="30sp"
                 android:layout_weight="0.5"
                 android:textAlignment="viewStart" />
 
@@ -87,7 +87,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView5"
-                android:textSize="20sp"
+                android:textSize="30sp"
                 android:layout_weight="0.5"
                 android:textAlignment="viewStart" />
 
@@ -111,7 +111,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView6"
-                android:textSize="20sp"
+                android:textSize="30sp"
                 android:layout_weight="0.5"
                 android:textAlignment="viewStart" />
 
@@ -130,6 +130,7 @@
     <Button
         android:text="Submit"
         android:layout_width="match_parent"
+        android:textSize="25sp"
         android:layout_height="wrap_content"
         android:id="@+id/submitButton" />
 </LinearLayout>

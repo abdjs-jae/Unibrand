@@ -57,30 +57,30 @@ public class ActivityHandler {
     public static void afterSplashActivity(final Context splashActivity, final Class<?> registerClass, final Class<?> localMenuClass){
 
         DataHandler.setCurrentContext(splashActivity);
+        setMenuClass(localMenuClass);
+        changeActivity(splashActivity, localMenuClass);
+//        if(DataHandler.hasUserData()) {
+//            Log.d("Test", "Has User Data");
 
-        if(DataHandler.hasUserData()) {
-            Log.d("Test", "Has User Data");
-            setMenuClass(localMenuClass);
-            changeActivity(splashActivity, LandingActivity.class);
-        }
-        else
-            DataHandler.isDeviceRegistered(
-                    new DataHandler.VolleyCallback() {
-                        @Override
-                        public void doAction(String result) {
-                            Log.d("Test", "device exists: " + result);
-                            DataHandler.setUserData(result);
-                            setMenuClass(localMenuClass);
-                            changeActivity(splashActivity, LandingActivity.class);
-                        }
-                    },
-                    new DataHandler.VolleyCallback() {
-                        @Override
-                        public void doAction(String result) {
-                            changeActivity(splashActivity, registerClass);
-                        }
-                    }
-            );
+//        }
+//        else
+//            DataHandler.isDeviceRegistered(
+//                    new DataHandler.VolleyCallback() {
+//                        @Override
+//                        public void doAction(String result) {
+//                            Log.d("Test", "device exists: " + result);
+//                            DataHandler.setUserData(result);
+//                            setMenuClass(localMenuClass);
+//                            changeActivity(splashActivity, LandingActivity.class);
+//                        }
+//                    },
+//                    new DataHandler.VolleyCallback() {
+//                        @Override
+//                        public void doAction(String result) {
+//                            changeActivity(splashActivity, registerClass);
+//                        }
+//                    }
+//            );
 //            changeActivity(splashActivity, registerClass);
 
 
